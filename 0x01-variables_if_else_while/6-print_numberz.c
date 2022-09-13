@@ -1,20 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 /**
-* main - main block
-* Description: Print all numbers of base 10, starting from 0.
-* You are not allowed to use any variable of type char.
-* You can only use `putchar` to print to console.
-*  You can only use `putchar` twice.
-*  Return: 0
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-int i;
+	int d;
 
-for (i = 0; i < 10; i++)
-{
-putchar(i + '0');
-}
+for (d = '0'; d <= '9'; d++)
+		putchar(d);
+	putchar('\n');
 
 return (0);
 }
