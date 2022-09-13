@@ -1,25 +1,27 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 /**
-* main - main block
-* Description: Print all possible combinations fo single-digit numbers.
-* Numbers must be separated by commas and a space.
-* You can only use `putchar` to print to console
-* You can only use `putchar` up to four times.
-* You are not allowed to use any variable of type `char`.
-* Return: 0
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
-while (i < 10)
 {
-putchar(i + '0');
-if (i < 9)
-{
-putchar(44);
-putchar(32);
-}
-i++;
-}
-putchar('\n');
+	int d;
+
+for (d = '0'; d <= '9'; d++)
+	{
+		putchar(d);
+		if (d != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
 
 return (0);
 }
